@@ -1,6 +1,8 @@
 syntax: glob
 
 backup
+lib
+blinkmyduino
 *.exe
 *.compiled
 *.o
