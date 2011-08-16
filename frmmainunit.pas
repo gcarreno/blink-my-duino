@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  Menus, ActnList, StdActns, ExtCtrls, PairSplitter, StdCtrls;
+  Menus, ActnList, StdActns, ExtCtrls, PairSplitter, StdCtrls,
+  SequencesUnit, EffectsUnit;
 
 type
 

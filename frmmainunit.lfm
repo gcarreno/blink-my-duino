@@ -1,38 +1,38 @@
 object frmMainForm: TfrmMainForm
-  Left = 492
-  Height = 501
-  Top = 221
-  Width = 776
+  Left = 419
+  Height = 639
+  Top = 174
+  Width = 955
   Caption = 'blink My Duino'
-  ClientHeight = 478
-  ClientWidth = 776
+  ClientHeight = 616
+  ClientWidth = 955
   Menu = mmApplication
   LCLVersion = '0.9.30'
   object sbApplication: TStatusBar
     Left = 0
     Height = 17
-    Top = 461
-    Width = 776
+    Top = 599
+    Width = 955
     Panels = <>
   end
   object psApplication: TPairSplitter
     Left = 0
-    Height = 461
+    Height = 599
     Top = 0
-    Width = 776
+    Width = 955
     Align = alClient
     Position = 544
     object psSideLeft: TPairSplitterSide
       Cursor = crArrow
       Left = 0
-      Height = 461
+      Height = 599
       Top = 0
       Width = 544
       ClientWidth = 544
-      ClientHeight = 461
+      ClientHeight = 599
       object pcSequences: TPageControl
         Left = 0
-        Height = 351
+        Height = 489
         Top = 110
         Width = 544
         ActivePage = tsSequences
@@ -52,7 +52,7 @@ object frmMainForm: TfrmMainForm
         Top = 0
         Width = 544
         Align = alTop
-        Caption = ' Sequence Group '
+        Caption = ' Sequence Group Details '
         TabOrder = 1
       end
       object Splitter1: TSplitter
@@ -68,22 +68,22 @@ object frmMainForm: TfrmMainForm
     object psSideRight: TPairSplitterSide
       Cursor = crArrow
       Left = 549
-      Height = 461
+      Height = 599
       Top = 0
-      Width = 227
-      ClientWidth = 227
-      ClientHeight = 461
+      Width = 406
+      ClientWidth = 406
+      ClientHeight = 599
       object PaintBox1: TPaintBox
         Left = 0
-        Height = 461
+        Height = 599
         Top = 0
-        Width = 227
+        Width = 406
         Align = alClient
       end
     end
   end
   object mmApplication: TMainMenu
-    left = 488
+    left = 632
     top = 24
     object mnuFile: TMenuItem
       Caption = '&File'
@@ -108,7 +108,7 @@ object frmMainForm: TfrmMainForm
     end
   end
   object alApplication: TActionList
-    left = 488
+    left = 632
     top = 88
     object actFileNew: TAction
       Category = 'File'
