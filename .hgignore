@@ -1,0 +1,13 @@
+syntax: glob
+
+backup
+*.exe
+*.compiled
+*.o
+*.obj
+*.or
+*.ppu
+*.so
+*.log
+*.status
+*.scan
