@@ -19,7 +19,7 @@ type
     actFileSave: TAction;
     alApplication: TActionList;
     actFileExit: TFileExit;
-    GroupBox1: TGroupBox;
+    gbSequencesDetails: TGroupBox;
     mmApplication: TMainMenu;
     mnuFileExit: TMenuItem;
     mnuFileSep1: TMenuItem;
@@ -28,7 +28,7 @@ type
     mnuFileOpen: TMenuItem;
     mnuFile: TMenuItem;
     mnuFileNew: TMenuItem;
-    PaintBox1: TPaintBox;
+    pbLEDs: TPaintBox;
     pcSequences: TPageControl;
     psApplication: TPairSplitter;
     psSideLeft: TPairSplitterSide;

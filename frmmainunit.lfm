@@ -1,7 +1,7 @@
 object frmMainForm: TfrmMainForm
-  Left = 419
+  Left = 418
   Height = 639
-  Top = 174
+  Top = 212
   Width = 955
   Caption = 'blink My Duino'
   ClientHeight = 616
@@ -46,13 +46,13 @@ object frmMainForm: TfrmMainForm
           Caption = 'Options'
         end
       end
-      object GroupBox1: TGroupBox
+      object gbSequencesDetails: TGroupBox
         Left = 0
         Height = 105
         Top = 0
         Width = 544
         Align = alTop
-        Caption = ' Sequence Group Details '
+        Caption = ' Sequences Details '
         TabOrder = 1
       end
       object Splitter1: TSplitter
@@ -73,7 +73,7 @@ object frmMainForm: TfrmMainForm
       Width = 406
       ClientWidth = 406
       ClientHeight = 599
-      object PaintBox1: TPaintBox
+      object pbLEDs: TPaintBox
         Left = 0
         Height = 599
         Top = 0
