@@ -23,6 +23,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="forms"/>
             <UnitOutputDirectory Value="../bin/lib/$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -62,6 +63,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="forms"/>
             <UnitOutputDirectory Value="../bin/lib/$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -98,18 +100,16 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="7">
+    <Units Count="14">
       <Unit0>
         <Filename Value="blinkmyduino.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <CursorPos X="3" Y="8"/>
+        <CursorPos Y="23"/>
         <UsageCount Value="51"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="frmmainunit.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="frmMainForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
@@ -144,8 +144,66 @@
         <EditorIndex Value="-1"/>
         <UsageCount Value="25"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="EffectsUnit.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="SequencesUnit.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="forms/bmd.forms.main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="BMD.Forms.Main"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="23"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="data/bmd.data.effects.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BMD.Data.Effects"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="26"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="data/bmd.data.sequences.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BMD.Data.Sequences"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="28"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../buildRelease/src/buildRelease.lpr"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../laz-JSON-Viewer/src/lazJSONViewer.lpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="23"/>
+        <UsageCount Value="10"/>
+      </Unit13>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="forms/bmd.forms.main.pas"/>
+        <Caret Line="19" Column="22"/>
+      </Position1>
+    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
@@ -154,6 +212,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="forms;data"/>
       <UnitOutputDirectory Value="../bin/lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

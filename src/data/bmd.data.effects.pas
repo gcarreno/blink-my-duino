@@ -1,4 +1,4 @@
-{ Program blinkmyduino
+{ Implements Data.Effects
 
   Copyright (c) 2011-2021 Gustavo Carreno <guscarreno@gmail.com>
 
@@ -20,25 +20,34 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 }
-program blinkmyduino;
+unit BMD.Data.Effects;
 
 {$mode objfpc}{$H+}
 
+interface
+
 uses
-  {$IFDEF UNIX}
-  cthreads,
-  {$ENDIF}
-  Interfaces, // this includes the LCL widgetset
-  Forms, BMD.Forms.Main
-  { you can add units after this };
+  Classes, SysUtils;
 
-{$R *.res}
+type
+{ IEffect }
+  IEffect = interface ['{49341229-4519-4FD1-A169-356E1054086C}']
 
-begin
-  RequireDerivedFormResource:=True;
-  Application.Scaled:=True;
-  Application.Title:='';
-  Application.Initialize;
-  Application.Run;
+  end;
+
+{ TEffect }
+  TEffect = class(TInterfacedObject, IEffect)
+
+  end;
+
+{ TEffects }
+  TEffects = class(TInterfaceList)
+  private
+  protected
+  public
+  published
+  end;
+
+implementation
+
 end.
-

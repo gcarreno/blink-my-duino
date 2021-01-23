@@ -4,10 +4,10 @@ object frmMainForm: TfrmMainForm
   Top = 212
   Width = 955
   Caption = 'blink My Duino'
-  ClientHeight = 616
+  ClientHeight = 639
   ClientWidth = 955
   Menu = mmApplication
-  LCLVersion = '0.9.30'
+  LCLVersion = '2.1.0.0'
   object sbApplication: TStatusBar
     Left = 0
     Height = 17
@@ -16,6 +16,7 @@ object frmMainForm: TfrmMainForm
     Panels = <>
   end
   object psApplication: TPairSplitter
+    Cursor = crDefault
     Left = 0
     Height = 599
     Top = 0
@@ -83,8 +84,8 @@ object frmMainForm: TfrmMainForm
     end
   end
   object mmApplication: TMainMenu
-    left = 632
-    top = 24
+    Left = 632
+    Top = 24
     object mnuFile: TMenuItem
       Caption = '&File'
       object mnuFileNew: TMenuItem
@@ -108,8 +109,8 @@ object frmMainForm: TfrmMainForm
     end
   end
   object alApplication: TActionList
-    left = 632
-    top = 88
+    Left = 632
+    Top = 88
     object actFileNew: TAction
       Category = 'File'
       Caption = '&New'

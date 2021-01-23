@@ -1,4 +1,4 @@
-{ Program blinkmyduino
+{ Implements Data.Sequences
 
   Copyright (c) 2011-2021 Gustavo Carreno <guscarreno@gmail.com>
 
@@ -20,25 +20,34 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 }
-program blinkmyduino;
+unit BMD.Data.Sequences;
 
 {$mode objfpc}{$H+}
 
+interface
+
 uses
-  {$IFDEF UNIX}
-  cthreads,
-  {$ENDIF}
-  Interfaces, // this includes the LCL widgetset
-  Forms, BMD.Forms.Main
-  { you can add units after this };
+  Classes, SysUtils;
 
-{$R *.res}
+type
+{ ISequence }
+  ISequence = interface ['{F42D68BE-1BE5-4CA9-93A2-793E26252C97}']
 
-begin
-  RequireDerivedFormResource:=True;
-  Application.Scaled:=True;
-  Application.Title:='';
-  Application.Initialize;
-  Application.Run;
+  end;
+
+{ TSequence }
+  TSequence = class(TInterfacedObject, ISequence)
+
+  end;
+
+{ TSequences }
+  TSequences = class(TInterfaceList)
+  private
+  protected
+  public
+  published
+  end;
+
+implementation
+
 end.
-
