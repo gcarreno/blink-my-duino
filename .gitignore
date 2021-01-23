@@ -1,6 +1,11 @@
 # blink-my-duino project specific
 /bin
 
+# Compiled l10n files: .mo should be ignored
+*.mo
+
+# Ghostwriter backup files
+*.backup
 
 # Uncomment these types if you want even more clean repository. But be careful.
 # It can make harm to an existing project source. Read explanations below.
@@ -25,6 +30,7 @@
 *.tds
 *.dcu
 *.lib
+*.lps
 *.o
 *.or
 *.compiled
@@ -48,3 +54,6 @@ __history/
 # Lazarus history and backups
 backup/
 *.bak
+
+# Castalia statistics file
+*.stat

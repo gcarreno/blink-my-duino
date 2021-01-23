@@ -11,6 +11,7 @@
 *.lps text
 *.lpr text
 *.def text
+*.txt text
 
 # Declare files that will always have CRLF line endings on checkout.
 *.dpk   text eol=crlf
@@ -30,3 +31,4 @@
 # Keep these files from archive/exports, mainly from production.
 .gitignore     export-ignore
 .gitattributes export-ignore
+/tests
